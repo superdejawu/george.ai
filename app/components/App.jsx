@@ -1,8 +1,8 @@
 import React from 'react';
-import Note from './Header.jsx';
+import Header from './Header.jsx';
 
 export default class App extends React.Component {
   render() {
-    return <Note />;
+    return <Header />;
   }
 }
