@@ -45,6 +45,11 @@ if(TARGET === 'start' || !TARGET) {
           test: /\.jsx?$/,
           loaders: ['react-hot','babel'],
           include: path.resolve(ROOT_PATH, 'app')
+        },
+         // SASS
+        {
+          test: /\.scss$/,
+          loader: 'style!css!sass'
         }
       ]
     },

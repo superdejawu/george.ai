@@ -1,4 +1,5 @@
-import './main.css';
+import './styles/normalize.css';
+import './styles/skeleton.scss';
 
 import React from 'react';
 import App from './components/App.jsx';
