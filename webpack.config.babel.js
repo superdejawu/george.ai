@@ -4,6 +4,7 @@ var webpack = require('webpack');
 var merge = require('webpack-merge');
 
 
+
 var TARGET = process.env.npm_lifecycle_event;
 var ROOT_PATH = path.resolve(__dirname);
 
@@ -22,7 +23,8 @@ var common = {
         test: /\.css$/,
         loaders: ['style', 'css'],
         include: path.resolve(ROOT_PATH, 'app')
-      }
+      },
+     
     ]
   },
   plugins: [
@@ -50,7 +52,10 @@ if(TARGET === 'start' || !TARGET) {
         {
           test: /\.scss$/,
           loader: 'style!css!sass'
-        }
+        },
+         {test: /\.(png|jpg)$/, 
+      loader: 'url-loader?limit=8192'} // inline base64 URLs for <=8k images, direct URLs for the rest
+
       ]
     },
     devServer: {

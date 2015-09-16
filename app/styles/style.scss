@@ -1,0 +1,22 @@
+@import "skeleton";
+
+// #navbar{
+// 	background-color: transparent;
+// 	background: transparent;
+// 	border-color: transparent;
+// 	float:none;
+// 	z-index: 1;
+// }
+
+
+#hero {
+	background-image: url("./BG.png");
+	min-height: 95vh;
+	min-width:100%;
+	background-size:cover;
+	color: white;
+}
+
+.relative{
+	position:relative;
+}

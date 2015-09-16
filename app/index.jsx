@@ -1,5 +1,6 @@
 import './styles/normalize.css';
-import './styles/skeleton.scss';
+// import './styles/skeleton.scss';
+import './styles/style.scss';
 
 import React from 'react';
 import App from './components/App.jsx';
@@ -12,4 +13,5 @@ function main() {
   document.body.appendChild(app);
 
   React.render(<App />, app);
+  
 }
