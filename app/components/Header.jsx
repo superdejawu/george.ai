@@ -5,9 +5,8 @@ export default class Header extends React.Component {
 		return <div >
 			<div className="container">
 			<div className="row">
-				<div className="one-half column" style={{marginTop: '25%'}}>
-					<p> Personal Site of George Wu</p>
-					<h1>Human, Designer, Code Artist</h1>
+				<div className="two-thirds column">
+					<h1 style={{marginTop: '75%'}}>Design. Code.  Break Things.</h1>
 
 				</div>
 			</div>

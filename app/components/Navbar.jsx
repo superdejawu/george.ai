@@ -9,6 +9,8 @@ export default class Navbar extends React.Component {
 			<div className="one-third column">
 
 				<img src="app/images/G Logo.png" ></img>
+				<h4>Personal Site of George Wu</h4>
+
 			</div>
 			</div>
 			</div>

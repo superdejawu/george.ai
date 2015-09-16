@@ -1,5 +1,25 @@
 @import "skeleton";
 
+@font-face {
+	font-family: 'Helvetica Neue Bold';
+	font-style: normal;
+	font-weight: normal;
+	src:  url('../fonts/HelveticaNeueBold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Sintony';
+	font-style: normal;
+	font-weight: normal;
+	src:  url('../fonts/Sintony-Regular.otf') format('otf');
+}
+
+@font-face {
+	font-family: 'Sintony Bold';
+	font-style: normal;
+	font-weight: normal;
+	src:  url('../fonts/Sintony-Bold.otf') format('otf');
+}
 // #navbar{
 // 	background-color: transparent;
 // 	background: transparent;
@@ -10,7 +30,7 @@
 
 
 #hero {
-	background-image: url("./BG.png");
+	background-image: url("../images/BG.png");
 	min-height: 95vh;
 	min-width:100%;
 	background-size:cover;
