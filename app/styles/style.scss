@@ -1,5 +1,9 @@
 @import "skeleton";
 
+$bright-red: #FF2D00;
+
+$black:#050505;
+
 @font-face {
 	font-family: 'Helvetica Neue Bold';
 	font-style: normal;
@@ -36,7 +40,7 @@ position:relative;
 #navbar-links{
 	position:absolute;
 	top:33%;
-	color:white;
+	color:$black;
 	right:0;
 	text-align: right;
 }
@@ -57,9 +61,14 @@ position:relative;
 }
 
 .header-text {
-	color: white;
+	color: $black;
 	position:absolute;
 	bottom:18%;
+
+}
+.header-subtitle {
+	color: $bright-red;
+    text-transform: uppercase;
 
 }
 
@@ -76,5 +85,5 @@ position:relative;
 
 
 canvas{
-	position:absolute
+	position:absolute;
 }

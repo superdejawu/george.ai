@@ -7,9 +7,10 @@ export default class Header extends React.Component {
 				<div className="row" id="header">
 					<div className="column header-text">
 
-						<h5 style={{"marginBottom":".5em"}}>Personal site of <b>George Wu</b></h5>
 
 						<h1>Design. Code. <br /> Break Things.</h1>
+						<h5 className="header-subtitle">Personal site of <b>George Wu</b></h5>
+
 
 					</div>
 				</div>

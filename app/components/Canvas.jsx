@@ -11,7 +11,10 @@ var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHe
 	var scene = new THREE.Scene();
 		var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 
-		var renderer = new THREE.WebGLRenderer();
+		var renderer = new THREE.WebGLRenderer({
+  antialias: true,
+  alpha: true
+});
 		renderer.setSize( window.innerWidth, window.innerHeight );
 		document.body.appendChild( renderer.domElement );
 
@@ -30,9 +33,12 @@ var camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHe
 		function render() {
 			requestAnimationFrame( render );
 
-			cube.rotation.x += 0.01;
-			cube.rotation.y += 0.01;
+			cube.rotation.x += 0.002;
+			cube.rotation.y += 0.002;
+
 			renderer.render( scene, camera );
+
+			
 		}
 		render();
 

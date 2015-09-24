@@ -7,7 +7,7 @@ import Header from './Header.jsx';
 export default class App extends React.Component {
   render() {
     return <div id="">
-    			<Canvas id="absolute"/>
+    			<Canvas id="absolute" className="header-canvas"/>
 
     			<Navbar />
 
