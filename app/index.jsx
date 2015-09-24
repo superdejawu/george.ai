@@ -1,6 +1,8 @@
 import './styles/normalize.css';
-// import './styles/skeleton.scss';
+import './styles/_skeleton.scss';
 import './styles/style.scss';
+
+
 
 import React from 'react';
 import App from './components/App.jsx';
@@ -8,10 +10,11 @@ import App from './components/App.jsx';
 main();
 
 function main() {
-  const app = document.createElement('div');
+	const app = document.createElement('div');
 
-  document.body.appendChild(app);
+	document.body.appendChild(app);
 
-  React.render(<App />, app);
+	React.render(<App />, app);
   
 }
+

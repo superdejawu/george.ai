@@ -2,19 +2,20 @@ import React from 'react';
 
 export default class Navbar extends React.Component {
 	render() {
-		return <div className="relative">
-		<div id="navbar">
-			<div className="container">
-			<div className="row">
-			<div className="one-third column">
+		return <div>
+		
+			<div className="container" >
+				<div id="navbar" className="row">
+					<div id="navbar-logo" className="one-third column">
 
-				<img src="app/images/G Logo.png" ></img>
-				<h4>Personal Site of George Wu</h4>
-
+						<img src="app/images/G Logo.png" ></img>
+					</div>
+					<div id ="navbar-links" className="two-thirds column">
+						<h6><b>NAV LINKS HERE</b></h6>
+					</div>
+				</div>
 			</div>
-			</div>
-			</div>
-		</div>
+	
 		</div>;
 	}
 }

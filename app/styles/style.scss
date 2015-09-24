@@ -20,23 +20,61 @@
 	font-weight: normal;
 	src:  url('../fonts/Sintony-Bold.otf') format('otf');
 }
-// #navbar{
-// 	background-color: transparent;
-// 	background: transparent;
-// 	border-color: transparent;
-// 	float:none;
-// 	z-index: 1;
-// }
+#navbar{
+position:relative;
+	min-height: 15vh;
+	min-width:100%;
+	background-size:cover;
+
+}
+
+#navbar-logo{
+	position:absolute;
+	top:33%;
+}
+
+#navbar-links{
+	position:absolute;
+	top:33%;
+	color:white;
+	right:0;
+	text-align: right;
+}
 
 
 #hero {
+	position:relative;
 	background-image: url("../images/BG.png");
-	min-height: 95vh;
 	min-width:100%;
 	background-size:cover;
+}
+
+#header {
+	position:relative;
+	min-height: 78vh;
+	min-width:100%;
+	background-size:cover;
+}
+
+.header-text {
 	color: white;
+	position:absolute;
+	bottom:18%;
+
 }
 
 .relative{
 	position:relative;
+}
+
+.absolute{
+	position:absolute;
+	bottom:0;
+	display:inline-block;
+	left:0;
+}
+
+
+canvas{
+	position:absolute
 }
