@@ -11,7 +11,32 @@ export default class Navbar extends React.Component {
 						<img src="app/images/G Logo.png" ></img>
 					</div>
 					<div id ="navbar-links" className="two-thirds column">
-						<h6><b>NAV LINKS HERE</b></h6>
+						<nav className= "right cl-effect-10">
+						
+							<a href="#" > 
+								<h5 className = "left">
+									00
+								</h5>
+								<div className="line-separator">
+								</div>
+								<div className="right">
+									 <small>PROJECTS</small>
+								</div>
+							</a>
+
+							<a href="#" > 
+								<h5 className = "left">
+									01
+								</h5>
+								<div className="line-separator">
+								</div>
+
+								<div className=" right">
+									 <small>ABOUT</small>
+								</div>
+							</a>
+						</nav>
+
 					</div>
 				</div>
 			</div>

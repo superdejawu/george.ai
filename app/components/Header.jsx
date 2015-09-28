@@ -8,8 +8,8 @@ export default class Header extends React.Component {
 					<div className="column header-text">
 
 
-						<h1>Design. Code. <br /> Break Things.</h1>
-						<h5 className="header-subtitle">Personal site of <b>George Wu</b></h5>
+						<h1>Design. Code.<br /> Break Things.</h1>
+						<h4 className="subtitle">Personal site of <b>George Wu</b></h4>
 
 
 					</div>
