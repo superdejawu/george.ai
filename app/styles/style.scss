@@ -2,7 +2,7 @@
 $bright-red: #FF2D00;
 
 $black:#050505;
-$barely-gray: rgb(235,235,235);
+$barely-gray: rgb(239,239,239);
 
 body{
 	 background-color: white;
@@ -38,6 +38,8 @@ body{
 	src:  url('../fonts/Sintony-Bold.otf') format('otf');
 }
 
+//GLOBAL CLASSES
+//************************************
 .relative{
 	position:relative;
 }
@@ -57,8 +59,11 @@ body{
 	text-align: left;
 }
 
+// NAVBAR
+//************************************
+
 #navbar{
-position:relative;
+	position:relative;
 	min-height: 15vh;
 	min-width:100%;
 	background-size:cover;
@@ -77,50 +82,6 @@ position:relative;
 	right:0;
 }
 
-
-#hero {
-	position:relative;
-	background-image: url("../images/BG.png");
-	min-width:100%;
-	background-size:cover;
-}
-
-#header {
-	position:relative;
-	min-height: 78vh;
-	min-width:100%;
-	background-size:cover;
-}
-
-.header-text {
-	color: $black;
-	position:absolute;
-	bottom:18%;
-
-}
-.subtitle {
-	color: $bright-red;
-    text-transform: uppercase;
-
-}
-
-canvas{
-	position:absolute;
-	background: -webkit-linear-gradient($barely-gray, white); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient($barely-gray, white); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient($barely-gray, white); /* For Firefox 3.6 to 15 */
-	background: linear-gradient($barely-gray, white); /* Standard syntax */
-}
-
-.item {
-	height: 22rem;
-    padding: 10px;
-    background-color: $barely-gray;
-}
-
-/* Effect 10: reveal, push out */
-
-
 nav a {
 	position: relative;
 	display: inline-block;
@@ -133,6 +94,7 @@ nav a {
 	letter-spacing: 1px;
 	
 }
+
 
 nav a:hover,
 nav a:focus {
@@ -207,4 +169,83 @@ nav a:focus {
 	border-radius: 10px;
 
 }
+
+
+// HEADER
+//************************************
+#hero {
+	position:relative;
+	background-image: url("../images/BG.png");
+	min-width:100%;
+	background-size:cover;
+}
+
+#header {
+	position:relative;
+	min-height: 83vh;
+	min-width:100%;
+	background-size:cover;
+}
+
+.header-text {
+	color: $black;
+	position:absolute;
+	bottom:18%;
+
+}
+.subtitle {
+	color: $bright-red;
+    text-transform: uppercase;
+
+}
+
+// HEADER CANVAS
+//************************************
+
+canvas{
+	position:absolute;
+	background: -webkit-linear-gradient($barely-gray, white); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient($barely-gray, white); /*For Opera 11.1 to 12.0*/
+	background: -moz-linear-gradient($barely-gray, white); /* For Firefox 3.6 to 15 */
+	background: linear-gradient($barely-gray, white); /* Standard syntax */
+}
+
+
+
+
+// ITEMS
+//************************************
+
+.parallax {
+	position: relative;
+    width: 100%;
+ 
+    z-index:0;
+}
+.parallax h5 { 
+   position: absolute; 
+   top: 50%; 
+   left: 5%; 
+   width: 100%;
+   vertical-align: middle;
+   z-index:1; 
+}
+
+
+
+.item-text {
+	position:absolute;
+	vertical-align: middle;
+	z-index:1;
+}
+
+
+.item {
+	position: relative;
+	min-height: 15rem;
+
+    background-color: $barely-gray;
+}
+
+
 

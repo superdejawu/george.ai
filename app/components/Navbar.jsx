@@ -17,8 +17,11 @@ export default class Navbar extends React.Component {
 								<h5 className = "left">
 									00
 								</h5>
+								
 								<div className="line-separator">
+
 								</div>
+
 								<div className="right">
 									 <small>PROJECTS</small>
 								</div>
@@ -27,6 +30,20 @@ export default class Navbar extends React.Component {
 							<a href="#" > 
 								<h5 className = "left">
 									01
+								</h5>
+								
+								<div className="line-separator">
+
+								</div>
+
+								<div className="right">
+									 <small>BLOG</small>
+								</div>
+							</a>
+
+							<a href="#" > 
+								<h5 className = "left">
+									10
 								</h5>
 								<div className="line-separator">
 								</div>
