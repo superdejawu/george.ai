@@ -1,7 +1,7 @@
 import './styles/normalize.css';
 import './styles/_skeleton.scss';
 import './styles/style.scss';
-
+import './styles/polyfill.object-fit.css'
 
 
 import React from 'react';

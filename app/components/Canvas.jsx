@@ -26,7 +26,7 @@ var THREE = require("three");
 		scene.add( cube );
 
 		camera.position.z = 5;
-		camera.position.x=-1.8;
+		camera.position.x=-1.6;
 		camera.position.y=0;
 
 
