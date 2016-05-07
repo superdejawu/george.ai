@@ -24,7 +24,7 @@ var common = {
         loaders: ['style', 'css'],
         include: path.resolve(ROOT_PATH, 'app')
       },
-     
+
     ]
   },
   plugins: [
@@ -40,7 +40,7 @@ process.env.BABEL_ENV = process.env.npm_lifecycle_event;
 
 if(TARGET === 'start' || !TARGET) {
   module.exports = merge(common, {
-    devtool: 'eval-source-map',
+    devtool: 'source-map',
     module: {
       loaders: [
         {
@@ -53,7 +53,7 @@ if(TARGET === 'start' || !TARGET) {
           test: /\.scss$/,
           loader: 'style!css!sass'
         },
-         {test: /\.(png|jpg|woff|woff2|otf|eot|ttf|svg|mp4)$/, 
+         {test: /\.(png|jpg|woff|woff2|otf|eot|ttf|svg|mp4)$/,
       loader: 'url-loader?limit=8192'} // inline base64 URLs for <=8k images, direct URLs for the rest
 
       ]
@@ -65,7 +65,17 @@ if(TARGET === 'start' || !TARGET) {
       progress: true
     },
     plugins: [
-      new webpack.HotModuleReplacementPlugin()
+      new webpack.HotModuleReplacementPlugin(),
+      new webpack.DefinePlugin({
+        'process.env': {
+          'NODE_ENV': JSON.stringify('production')
+        }
+      }),
+      new webpack.optimize.UglifyJsPlugin({
+        compressor: {
+        warnings: false
+      }
+   })
     ]
   });
 }
