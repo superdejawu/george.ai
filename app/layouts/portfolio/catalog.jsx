@@ -9,36 +9,40 @@ export default class Catalog extends React.Component {
 
 	render(){
 
-		let modalStyles = {
-			zIndex:'3',
+		let modalStyle= {
+			zIndex:'2',
+			background: 'rgba(132, 150, 173, .8)',
+			bottom: '0',
+			left: '0',
+			overflow: 'auto',
 			position: 'fixed',
-			top: '5%',
-			right: '12%',
-			bottom: '30%',
-			left: '12%',
-			boxShadow: '0px 2rem 2rem .5rem rgba(0, 0, 0, 0.5)',
+			right: '0',
+			top: '0'
+
+		}
+		let modalContentStyle = {
+			zIndex:'3',
+			position: 'relative',
+			margin: '5%',
+			boxShadow: '0px 1.5rem 1.5rem .9rem rgba(0, 0, 0, 0.2)',
 			overflow: 'auto',
 			background: '#fff'
 		};
 
-		let modalBackground = {
-			zIndex:'2',
-			background: 'rgba(0,0,0,0.5)',
-			height:'100%',
-			width: '100%',
-			position: 'fixed',
-			top: '0',
-			bottom: '0',
-			left: '0',
-			right: '0'
+		let modalBgStyle = {
 
-		};
+			position:'fixed',
+			width:'100%',
+			height:'100%'
+		}
 
-		return <section>
+
+		return <section style={modalStyle}>
 						<Link to='home'>
-							<div style={modalBackground}  />
+							<div style={modalBgStyle}  />
 						</Link>
-						<div style={modalStyles}>
+
+						<div style={modalContentStyle}>
 			        <video src="app/images/CatalogApp_s.mp4" style={videoStyle}/>
 							<div className="container center">
 			          <h2>THIS IS THE CATALOG PAGE</h2>
@@ -51,9 +55,9 @@ export default class Catalog extends React.Component {
 								Nunc ac magna at nisl vestibulum ornare vel nec sapien. Aenean non nunc posuere sapien condimentum sagittis eu non urna. Suspendisse id hendrerit mi. Aliquam in lectus nibh. Etiam luctus ornare placerat. Donec cursus est et lacus sollicitudin, cursus viverra ante dignissim. Sed ultricies blandit lacus eu mattis. Nullam accumsan tortor eu massa auctor fermentum.
 
 								Pellentesque sit amet gravida magna, quis sodales arcu. Donec pulvinar ac lacus sed pretium. Maecenas vestibulum nisi vel iaculis tincidunt. Maecenas nisi nulla, dictum id sapien nec, lacinia semper turpis. Maecenas venenatis sodales dolor, sed posuere lectus iaculis a. Praesent a justo ullamcorper, eleifend neque in, mollis nisi. Pellentesque ultrices, turpis nec imperdiet venenatis, nulla augue condimentum sapien, non tincidunt odio augue sed mi. Fusce faucibus egestas interdum. Donec eu commodo dolor, ut auctor neque.
-
-
 			        </div>
+
+
 						</div>
 
 					</section>;
