@@ -7,7 +7,12 @@ import Items from '../components/Items.jsx';
 
 export default class Home extends React.Component {
 
+
 	render(){
+
+		let page = document.getElementsByTagName("html")[0];
+		page.style.overflow = "auto";
+
 		return <div>
 				{this.props.children}
 					<div>

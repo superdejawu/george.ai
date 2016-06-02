@@ -36,14 +36,17 @@ export default class Catalog extends React.Component {
 			height:'100%'
 		}
 
+		//lock scrolling in background when not in modal
+		let page = document.getElementsByTagName("html")[0];
+		page.style.overflow = "hidden";
 
 		return <section style={modalStyle}>
-						<Link to='home'>
+						<Link to='home' >
 							<div style={modalBgStyle}  />
 						</Link>
 
 						<div style={modalContentStyle}>
-			        <video src="app/images/CatalogApp_s.mp4" style={videoStyle}/>
+			        <video autoPlay src="app/images/CatalogApp_s.mp4" style={videoStyle}/>
 							<div className="container center">
 			          <h2>THIS IS THE CATALOG PAGE</h2>
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus feugiat nunc sollicitudin ex vulputate, efficitur aliquam turpis maximus. Sed eu fringilla erat. Phasellus quis vulputate augue. Sed ut eros quis neque aliquam commodo. Morbi ut fringilla lectus. Maecenas nec ex justo. Quisque id tortor libero. Morbi bibendum leo neque, ut rhoncus lacus porttitor nec. Phasellus orci justo, dictum a volutpat ac, eleifend vel neque. Aenean tincidunt in magna vitae cursus. Duis rhoncus eleifend sapien id ultrices. Integer at lorem et massa rhoncus accumsan. Nulla placerat lectus sed congue lacinia.
