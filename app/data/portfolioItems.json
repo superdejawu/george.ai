@@ -1,0 +1,8 @@
+[
+ 	{key:0, img: "app/images/maide-control.jpg", title:"TESTMaide Control", description:"This is a decsription of cool shiz. It is cool shiz all the way. Trust me."},
+	{key:1, img: "app/images/kano-crop.jpg", title:"TESTKano", description:"This is a decsription of cool shiz. It is cool shiz all the way. Trust me."},
+	{key:2, img: "app/images/maven-intro.png", title:"Maven", description:"This is a decsription of cool shiz. It is cool shiz all the way. Trust me."},
+  {key:3, img: "app/images/maide-control.jpg", title:"Maide Control", description:"This is a decsription of cool shiz. It is cool shiz all the way. Trust me."},
+	{key:4, img: "app/images/kano-crop.jpg", title:"Kano", description:"This is a decsription of cool shiz. It is cool shiz all the way. Trust me."},
+	{key:5, img: "app/images/maven-intro.png", title:"Maven", description:"This is a decsription of cool shiz. It is cool shiz all the way. Trust me."}
+]
