@@ -9,7 +9,7 @@ export default class Home extends React.Component {
 
 
 	render(){
-
+		//let page scroll normally when not in modal
 		let page = document.getElementsByTagName("html")[0];
 		page.style.overflow = "auto";
 
