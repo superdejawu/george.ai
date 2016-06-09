@@ -14,10 +14,11 @@ export default class Home extends React.Component {
 		page.style.overflow = "auto";
 
 		return <div>
-				{this.props.children}
 					<div>
 						<Header />
 						<Items />
+						{this.props.children}
+
 					</div>
 
 

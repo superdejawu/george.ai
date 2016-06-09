@@ -14,7 +14,7 @@ import Home from './layouts/views/Home.jsx';
 import About from './layouts/views/About.jsx';
 
 //import portfolio items
-import Catalog from './layouts/portfolio/Catalog.jsx';
+import * as portfolio from './layouts/portfolio/portfolio.jsx';
 
 main();
 
@@ -26,7 +26,8 @@ function main() {
 				{/*<IndexRedirect to="home" />*/}
 				<IndexRoute component={Home} />
 				<Route path="home" component = {Home}>
-					<Route path = "/catalog" component = {Catalog} />
+					<Route path = "/:id" component = {portfolio.Maide} />
+					{/*<Route path = "/:id" component = {portfolio.Catalog} />*/}
 				</Route>
 
 				<Route path="about" component = {About} />

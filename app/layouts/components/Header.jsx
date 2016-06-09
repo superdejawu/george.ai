@@ -12,7 +12,7 @@ export default class Header extends React.Component {
 
 
 						<h1>Design. Code.<br /> Break Things.</h1>
-						<h4 className="subtitle">Personal site of <b>George Wu</b></h4>
+						<h4 className="subtitle">Test site of <b>George Wu</b></h4>
 
 
 					</div>
