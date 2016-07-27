@@ -11,8 +11,8 @@ export default class Header extends React.Component {
 					<div className="column header-text">
 
 
-						<h1>Design. Code.<br /> Break Things.</h1>
-						<h4 className="subtitle">Test site of <b>George Wu</b></h4>
+						<h1>A Collection of<br /> Broken Things.</h1>
+						<h4 className="subtitle">Testing site of <b>George Wu</b></h4>
 
 
 					</div>

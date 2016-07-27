@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from './Navbar.jsx';
 // import Canvas from './Canvas.jsx';
-import Header from './Header.jsx';
-import Items from './Items.jsx';
+// import Header from './Header.jsx';
+// import Items from './Items.jsx';
 // import {Link} from 'react-router';
 
 
@@ -16,7 +16,7 @@ export default class App extends React.Component {
 
           	<Navbar />
 
-          {this.props.children}
+          {/*{this.props.children}*/}
 
 
 

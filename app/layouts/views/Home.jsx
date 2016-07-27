@@ -17,7 +17,7 @@ export default class Home extends React.Component {
 					<div>
 						<Header />
 						<Items />
-						{this.props.children}
+						{/*{this.props.children}*/}
 
 					</div>
 
